@@ -1,14 +1,14 @@
-﻿using BulkyBook.DataAccess.Repository.IRepository;
-using BulkyBook.Models;
-using BulkyBook.Models.ViewModels;
-using BulkyBook.Utility;
+﻿using Final.DataAccess.Repository.IRepository;
+using Final.Models;
+using Final.Models.ViewModels;
+using Final.Utility;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Stripe.Checkout;
 using System.Security.Claims;
 
-namespace BulkyBookWeb.Areas.Customer.Controllers {
+namespace FinalWebProject.Areas.Customer.Controllers {
 
     [Area("customer")]
     [Authorize]

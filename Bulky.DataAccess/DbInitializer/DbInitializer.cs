@@ -1,6 +1,6 @@
-﻿using BulkyBook.DataAcess.Data;
-using BulkyBook.Models;
-using BulkyBook.Utility;
+﻿using Final.DataAccess.Data;
+using Final.Models;
+using Final.Utility;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BulkyBook.DataAccess.DbInitializer {
+namespace Final.DataAccess.DbInitializer {
     public class DbInitializer : IDbInitializer {
 
         private readonly UserManager<IdentityUser> _userManager;

@@ -1,8 +1,8 @@
-﻿using BulkyBook.DataAccess.Repository.IRepository;
-using BulkyBook.DataAcess.Data;
-using BulkyBook.Models;
-using BulkyBook.Models.ViewModels;
-using BulkyBook.Utility;
+﻿using Final.DataAccess.Repository.IRepository;
+using Final.DataAccess.Data;
+using Final.Models;
+using Final.Models.ViewModels;
+using Final.Utility;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Data;
 
-namespace BulkyBookWeb.Areas.Admin.Controllers
+namespace FinalWebProject.Areas.Admin.Controllers
 {
     [Area("Admin")]
     [Authorize(Roles = SD.Role_Admin)]

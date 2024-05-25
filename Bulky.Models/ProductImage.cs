@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BulkyBook.Models {
+namespace Final.Models {
     public class ProductImage {
 
         public int Id { get; set; }

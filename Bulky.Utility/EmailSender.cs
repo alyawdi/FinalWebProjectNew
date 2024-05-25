@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BulkyBook.Utility {
+namespace Final.Utility {
     public class EmailSender : IEmailSender {
         public string SendGridSecret { get; set; }
 

@@ -1,9 +1,9 @@
-﻿using BulkyBook.Models;
+﻿using Final.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace BulkyBook.DataAcess.Data
+namespace Final.DataAccess.Data
 {
     public class ApplicationDbContext : IdentityDbContext<IdentityUser> 
     {

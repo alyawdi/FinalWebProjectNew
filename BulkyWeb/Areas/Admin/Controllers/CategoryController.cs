@@ -1,11 +1,11 @@
-﻿using BulkyBook.DataAccess.Repository.IRepository;
-using BulkyBook.DataAcess.Data;
-using BulkyBook.Models;
-using BulkyBook.Utility;
+﻿using Final.DataAccess.Repository.IRepository;
+using Final.DataAccess.Data;
+using Final.Models;
+using Final.Utility;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
-namespace BulkyBookWeb.Areas.Admin.Controllers
+namespace FinalWebProject.Areas.Admin.Controllers
 {
     [Area("Admin")]
     [Authorize(Roles = SD.Role_Admin)]

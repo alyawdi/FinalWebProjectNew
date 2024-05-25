@@ -1,9 +1,9 @@
-﻿using BulkyBook.DataAccess.Repository.IRepository;
-using BulkyBook.Utility;
+﻿using Final.DataAccess.Repository.IRepository;
+using Final.Utility;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
 
-namespace BulkyBookWeb.ViewComponents {
+namespace FinalWebProject.ViewComponents {
     public class ShoppingCartViewComponent : ViewComponent {
 
         private readonly IUnitOfWork _unitOfWork;

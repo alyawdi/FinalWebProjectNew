@@ -1,12 +1,12 @@
-using BulkyBook.DataAccess.Repository;
-using BulkyBook.DataAccess.Repository.IRepository;
-using BulkyBook.DataAcess.Data;
+using Final.DataAccess.Repository;
+using Final.DataAccess.Repository.IRepository;
+using Final.DataAccess.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
-using BulkyBook.Utility;
+using Final.Utility;
 using Stripe;
-using BulkyBook.DataAccess.DbInitializer;
+using Final.DataAccess.DbInitializer;
 
 var builder = WebApplication.CreateBuilder(args);
 

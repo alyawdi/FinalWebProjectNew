@@ -1,13 +1,13 @@
-﻿using BulkyBook.DataAccess.Repository.IRepository;
-using BulkyBook.Models;
-using BulkyBook.Utility;
+﻿using Final.DataAccess.Repository.IRepository;
+using Final.Models;
+using Final.Utility;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using System.Security.Claims;
 
-namespace BulkyBookWeb.Areas.Customer.Controllers
+namespace FinalWebProject.Areas.Customer.Controllers
 {
     [Area("Customer")]
     public class HomeController : Controller
