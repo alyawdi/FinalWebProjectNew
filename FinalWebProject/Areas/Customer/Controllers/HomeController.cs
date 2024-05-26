@@ -42,6 +42,7 @@ namespace FinalWebProject.Areas.Customer.Controllers
         [Authorize]
         public IActionResult Details(ShoppingCart shoppingCart) 
         {
+            //here we used claimIdentity to get the user id of the logged in user
             var claimsIdentity = (ClaimsIdentity)User.Identity;
             var userId = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier).Value;
             shoppingCart.ApplicationUserId= userId;

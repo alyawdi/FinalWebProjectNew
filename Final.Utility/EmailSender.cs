@@ -17,7 +17,7 @@ namespace Final.Utility {
         }
 
         public Task SendEmailAsync(string email, string subject, string htmlMessage) {
-            //logic to send email
+            //logic to send email using SendGrid API, I will implement the key of the api later ;)
 
             var client = new SendGridClient(SendGridSecret);
 
