@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="//cdn.datatables.net/1.13.3/css/jquery.dataTables.min.css" />
 </head>
 <body class="hold-transition layout-top-nav">
-        <header>
+    <header>
         <!-- Navbar -->
         <nav class="main-header navbar navbar-expand-md navbar-light navbar-white">
             <div class="container">
@@ -74,20 +74,20 @@
                         }
 
                     </ul>
-                        <!-- Right navbar links -->
-                        <ul class="order-1 order-md-3 navbar-nav navbar-no-expand ml-auto">
-                            <li class="nav-item">
-                                <a class="nav-link" asp-area="Customer" asp-controller="Cart" asp-action="Index">
-                                    @await Component.InvokeAsync("ShoppingCart")
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <partial name="_LoginPartial" />
+                    <!-- Right navbar links -->
+                    <ul class="order-1 order-md-3 navbar-nav navbar-no-expand ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="Customer" asp-controller="Cart" asp-action="Index">
+                                @await Component.InvokeAsync("ShoppingCart")
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <partial name="_LoginPartial" />
 
-                            </li>
-                        </ul>
+                        </li>
+                    </ul>
                 </div>
-                </div>
+            </div>
         </nav>
     </header>
     <div class="container">
@@ -100,11 +100,11 @@
     <!-- Main Footer -->
     <footer class="main-footer">
         <!-- To the right -->
-        <div class="float d-none d-sm-inline">
+        <div class="float-left d-none d-sm-inline">
             Made with <i class="bi bi-heart-fill"></i> by Ali Awdi & Abbas Oliek
         </div>
-     </footer>
-   
+    </footer>
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
