@@ -13,6 +13,7 @@ namespace FinalWebProject.ViewComponents {
 
         public async Task<IViewComponentResult> InvokeAsync() 
         {
+            //get the user id 
             var claimsIdentity = (ClaimsIdentity)User.Identity;
             var claim = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier);
 

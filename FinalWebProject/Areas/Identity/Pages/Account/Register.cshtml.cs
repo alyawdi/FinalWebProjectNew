@@ -39,6 +39,7 @@ namespace FinalWebProject.Areas.Identity.Pages.Account
 
         public RegisterModel(
             UserManager<IdentityUser> userManager,
+            //here we add the add manager to the constructor so we can use it in the pages
             RoleManager<IdentityRole> roleManager,
             IUserStore<IdentityUser> userStore,
             SignInManager<IdentityUser> signInManager,

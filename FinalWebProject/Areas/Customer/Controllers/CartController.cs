@@ -94,13 +94,13 @@ namespace FinalWebProject.Areas.Customer.Controllers {
 
             if (applicationUser.CompanyId.GetValueOrDefault() == 0)
             {
-                // It is a regular customer
+                // It is a regular customer so the payment is pending
                 ShoppingCartVM.OrderHeader.PaymentStatus = SD.PaymentStatusPending;
                 ShoppingCartVM.OrderHeader.OrderStatus = SD.StatusPending;
             }
             else
             {
-                // It is a company user
+                // It is a company user it can be delayed payment
                 ShoppingCartVM.OrderHeader.PaymentStatus = SD.PaymentStatusDelayedPayment;
                 ShoppingCartVM.OrderHeader.OrderStatus = SD.StatusApproved;
             }
@@ -137,7 +137,7 @@ namespace FinalWebProject.Areas.Customer.Controllers {
             }
 
             HttpContext.Session.Clear();
-
+            //should send an email to confirm the order but we are not going to do that
             List<ShoppingCart> shoppingCarts = _unitOfWork.ShoppingCart
                 .GetAll(u => u.ApplicationUserId == orderHeader.ApplicationUserId).ToList();
 

@@ -29,7 +29,7 @@ namespace Final.DataAccess.DbInitializer {
         public void Initialize() {
 
 
-            //migrations if they are not applied
+            //migrations if they are not applied; they will be applied automatically when application starts with the update-databse also! 
             try {
                 if (_db.Database.GetPendingMigrations().Count() > 0) {
                     _db.Database.Migrate();

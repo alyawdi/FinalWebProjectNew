@@ -33,6 +33,7 @@ builder.Services.AddSession(options => {
 builder.Services.AddScoped<IDbInitializer, DbInitializer>();
 builder.Services.AddRazorPages();
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+//add the email sender configuration and services 
 builder.Services.AddScoped<IEmailSender, EmailSender>();
 var app = builder.Build();
 
